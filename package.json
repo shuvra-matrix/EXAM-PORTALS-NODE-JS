@@ -8,5 +8,24 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
-  }
+  },
+  "name": "exam-portals-node-js",
+  "version": "1.0.0",
+  "main": "app.js",
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuvra-matrix/EXAM-PORTALS-NODE-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuvra-matrix/EXAM-PORTALS-NODE-JS/issues"
+  },
+  "homepage": "https://github.com/shuvra-matrix/EXAM-PORTALS-NODE-JS#readme",
+  "description": ""
 }
