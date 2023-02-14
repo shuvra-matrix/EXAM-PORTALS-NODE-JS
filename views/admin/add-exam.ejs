@@ -1,0 +1,13 @@
+<%- include("../include/head.ejs") %>
+<body>
+  <%- include("../include/navbar.ejs") %>
+  <main>
+    <form action="admin/add-exam" method="POST">
+      <label for="exam">Exam Name</label>
+      <input type="text" name="exam" id="exam" />
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <%- include("../include/end.ejs") %>
+
