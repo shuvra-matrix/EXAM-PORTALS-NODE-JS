@@ -1,0 +1,34 @@
+<%- include("../include/head.ejs") %>
+<body>
+  <%- include("../include/navbar.ejs") %>
+  <main>
+    <% if ( exam.length > 0 ) { %>
+    <form action="/admin/add-question" method="POST">
+      <label for="exam">Exam Name</label>
+      <select name="examid" id="exam">
+        <option value="">Select Exam Name</option>
+        <% exam.forEach(ex => { %>
+        <option value="<%= ex.id  %>"><%= ex.exam %></option>
+        <% }) %>
+      </select>
+      <label for="que">Question</label>
+      <input type="text" name="que" id="que" />
+      <label for="oi">Option 1</label>
+      <input type="text" name="oi" id="oi" />
+      <label for="oii">Option 2</label>
+      <input type="text" name="oii" id="oii" />
+      <label for="oiii">Option 3</label>
+      <input type="text" name="oiii" id="oiii" />
+      <label for="oiv">Option 4</label>
+      <input type="text" name="oiv" id="oiv" />
+      <label for="ans">Answer</label>
+      <input type="text" name="ans" id="ans" />
+      <button type="submit">Submit</button>
+    </form>
+    <% } else { %>
+    <h1>No Exam Present</h1>
+    <% } %>
+  </main>
+
+  <%- include("../include/end.ejs") %>
+
